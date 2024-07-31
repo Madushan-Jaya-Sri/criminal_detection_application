@@ -6,6 +6,12 @@ from .forms import SuspectForm
 from .models import Suspect
 import face_recognition
 
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Welcome to the homepage!")
+
+
 def recognize_suspect(photo):
     # Load the uploaded image
     uploaded_image = face_recognition.load_image_file(photo)
