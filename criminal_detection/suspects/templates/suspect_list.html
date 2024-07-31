@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suspect List</title>
+</head>
+<body>
+    <h1>Suspect List</h1>
+    <ul>
+        {% for suspect in suspects %}
+            <li>{{ suspect.name }} - {{ suspect.age }} - {{ suspect.crime_incidents }} - {{ suspect.arrest_reason }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

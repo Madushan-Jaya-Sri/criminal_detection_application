@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suspect Details</title>
+</head>
+<body>
+    <h1>Suspect Details</h1>
+    <p>Name: {{ suspect.name }}</p>
+    <p>Age: {{ suspect.age }}</p>
+    <p>Crime Incidents: {{ suspect.crime_incidents }}</p>
+    <p>Arrest Reason: {{ suspect.arrest_reason }}</p>
+    <img src="{{ suspect.photo.url }}" alt="{{ suspect.name }}">
+</body>
+</html>
